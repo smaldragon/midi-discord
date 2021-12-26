@@ -28,7 +28,7 @@ try:
       raise Exception
 # from user input
 except:
-  print("Select your Configuration")
+  print("Select your MIDI Device")
   input_devices = []
   # Looping logic as get_input_names can return duplicated entries
   for name in input_names:
@@ -39,7 +39,7 @@ except:
   # Select the device
   while True:  
     try:
-      selected = int(input("Choose pedal device (negative number for reversed polarity): "))
+      selected = int(input("Input number of device (negative number for reversed polarity pedal): "))
     except:
       continue
     if selected < 0:
